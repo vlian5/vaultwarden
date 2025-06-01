@@ -1,25 +1,27 @@
 ![Vaultwarden Logo](./resources/vaultwarden-logo-auto.svg)
 
-# vaultwarden-lang-zhcn
+# vaultwarden中文汉化更新版本
 
-## admin
+## admin 汉化更新内容如下
 [dani-garcia/vaultwarden](https://github.com/dani-garcia/vaultwarden) 管理页面模板（位于 `src/static/templates/admin`）的简体中文翻译，如下所述：[https://github.com/dani-garcia/vaultwarden/wiki/Translating-admin-page](https://github.com/dani-garcia/vaultwarden/wiki/Translating-admin-page)。
 
-## email
+## email 汉化更新内容如下
 [dani-garcia/vaultwarden](https://github.com/dani-garcia/vaultwarden) 电子邮件模板（位于 `src/static/templates/email`）的简体中文翻译，如下所述：[https://github.com/dani-garcia/vaultwarden/wiki/Translating-the-email-templates](https://github.com/dani-garcia/vaultwarden/wiki/Translating-the-email-templates)。
 
 
 ## 使用方法
-保持文件结构，放置于 Vaultwarden 对应的目录下。
 
-例如 Docker 方式，假设你部署的时候使用 `-v` 参数指定的宿主机文件夹为 `vaultwarden-data`：
+fork官方储存库，替换以上汉化文件 或 fork 此储存库，自行打包构建镜像文件
 
-+ 管理页面模板文件放置于宿主机的 `/vaultwarden-data/templates/admin` 文件夹下
-+ 电子邮件模板文件放置于宿主机的 `/vaultwarden-data/templates/email` 文件夹下
-
-然后 `docker restart vaultwarden` 重启 Vaultwarden 容器。
-
-
+也可直接拉取镜像文件
+指定版本号
+```
+docker pull registry.cn-hangzhou.aliyuncs.com/docker609/vaultwarden:1.34.1
+```
+拉取最新版
+```
+docker pull registry.cn-hangzhou.aliyuncs.com/docker609/vaultwarden:latest
+```
 
 An alternative server implementation of the Bitwarden Client API, written in Rust and compatible with [official Bitwarden clients](https://bitwarden.com/download/) [[disclaimer](#disclaimer)], perfect for self-hosted deployment where running the official resource-heavy service might not be ideal.
 
